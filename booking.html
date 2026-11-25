@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ask about a stay at OC19 LOUNGE in Dakar, Senegal.">
+    <meta name="theme-color" content="#183c32">
+    <title>OC19 LOUNGE | Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Shared site header and navigation. -->
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="OC19 LOUNGE home">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        OC19 LOUNGE
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="about.html">About &amp; Contact</a></li>
+          <li><a class="nav-cta" href="booking.html">Ask about a stay <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section-shell booking-page">
+      <!-- Demo inquiry form; it does not send or save a booking. -->
+      <section class="booking-panel" aria-labelledby="booking-heading">
+        <p class="eyebrow">No pressure, just ask</p>
+        <h1 id="booking-heading">Plan your stay.</h1>
+        <p>Share your travel dates and we’ll show a local demo message.</p>
+        <form id="booking-form">
+          <div class="form-grid">
+            <p>
+              <label for="guest-name">Your name</label>
+              <input id="guest-name" name="name" type="text" autocomplete="name" required>
+            </p>
+            <p>
+              <label for="guest-email">Email address</label>
+              <input id="guest-email" name="email" type="email" autocomplete="email" required>
+            </p>
+            <p>
+              <label for="arrival-date">Arrival</label>
+              <input id="arrival-date" name="arrival" type="date" required>
+            </p>
+            <p>
+              <label for="departure-date">Departure</label>
+              <input id="departure-date" name="departure" type="date" required>
+            </p>
+            <p>
+              <label for="guest-count">Number of guests</label>
+              <input id="guest-count" name="guests" type="number" min="1" step="1" required>
+            </p>
+            <p class="message-field">
+              <label for="inquiry-message">Anything else? (optional)</label>
+              <textarea id="inquiry-message" name="message" rows="3"></textarea>
+            </p>
+          </div>
+          <button class="button button-green" type="submit">Show demo message <span aria-hidden="true">→</span></button>
+        </form>
+        <p id="booking-feedback" class="booking-feedback" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <!-- Shared footer used on every page. -->
+    <footer class="site-footer">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">O</span>OC19 LOUNGE</a>
+      <p>Good stays. Good stories. See you in Dakar.</p>
+      <a class="back-to-top" href="index.html">Home</a>
+    </footer>
+  </body>
+</html>
